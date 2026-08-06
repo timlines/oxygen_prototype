@@ -1,0 +1,23 @@
+; Engine configuration file.
+; Oxygen for a Dying World -- AI-native UI prototype
+
+config_version=5
+
+[application]
+
+config/name="Oxygen for a Dying World"
+config/description="Prototype exploring an intent-driven command console as a replacement for traditional game menus."
+run/main_scene="res://scenes/Main.tscn"
+config/features=PackedStringArray("4.3", "GL Compatibility")
+config/icon="res://icon.svg"
+
+[autoload]
+
+GameSystems="*res://autoload/GameSystems.gd"
+IntentResolverService="*res://autoload/IntentResolverService.gd"
+CommandDispatcher="*res://autoload/CommandDispatcher.gd"
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
